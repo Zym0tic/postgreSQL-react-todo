@@ -1,0 +1,21 @@
+{
+  "name": "postgresql-react-todo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "if-env TYPE=server && (cd server && npm install) || (cd client && npm install)",
+    "server": "node ./server/server.js",
+    "client": "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zym0tic/postgreSQL-react-todo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Zym0tic/postgreSQL-react-todo/issues"
+  },
+  "homepage": "https://github.com/Zym0tic/postgreSQL-react-todo#readme",
+  "dependencies": {
+    "if-env": "^1.0.4"
+  }
+}
