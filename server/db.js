@@ -1,4 +1,4 @@
-const Pool = require('pg').pool
+const Pool = require('pg').Pool
 require('dotenv').config()
 
 const pool = new Pool({
@@ -9,4 +9,4 @@ const pool = new Pool({
     database: 'todoapp'
 })
 
-module.exports = pool;
+module.exports = pool
