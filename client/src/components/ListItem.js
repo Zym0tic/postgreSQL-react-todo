@@ -1,8 +1,10 @@
 import React from 'react'
 
-function ListItem() {
+function ListItem({task}) {
   return (
-    <div>ListItem</div>
+    <div className='list-item'>
+      <p>{task.title}</p>
+    </div>
   )
 }
 
