@@ -4,7 +4,7 @@ import ProgressBar from './ProgressBar'
 
 function ListItem({ task }) {
   return (
-    <div className="list-item">
+    <li className="list-item">
       <div className="info-container">
         <TickIcon/>
         <p>{task.title}</p>
@@ -14,7 +14,7 @@ function ListItem({ task }) {
         <button className="edit">EDIT</button>
         <button className="delete">DELETE</button>
       </div>
-    </div>
+    </li>
   );
 }
 
