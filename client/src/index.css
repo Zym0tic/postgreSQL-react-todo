@@ -30,6 +30,35 @@ body {
     background-color: transparent;
 }
 
+.edit {
+  border: 1.5px solid rgb(141, 181, 145);
+  color: rgb(141, 181, 145);
+}
+
+.edit:hover {
+ background-color: grey;
+ color: black;
+}
+
+.edit:active {
+  color: rgb(255,255,255);
+  background-color: rgb(141, 181, 145);
+}
+
+.delete {
+  border: 1.5px solid rgb(255, 175, 163);
+  color: rgb(255, 175, 163);
+}
+
+.delete:hover {
+  background-color: rgb(255, 201, 193);
+}
+
+.delete:active {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 175, 163);
+}
+
 /* list header */
 
 .list-header {

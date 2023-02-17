@@ -8,11 +8,11 @@ function ListItem({ task }) {
       <div className="info-container">
         <TickIcon/>
         <p>{task.title}</p>
-        <ProgressBar />
+        {/* <ProgressBar /> */}
       </div>
       <div className="button-container">
-        <button className="edit">EDIT</button>
-        <button className="delete">DELETE</button>
+        <button className="edit">Edit</button>
+        <button className="delete">Delete</button>
       </div>
     </li>
   );
