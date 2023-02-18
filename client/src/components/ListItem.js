@@ -1,6 +1,6 @@
 import React from "react";
 import TickIcon from './TickIcon'
-import ProgressBar from './ProgressBar'
+// import ProgressBar from './ProgressBar'
 
 function ListItem({ task }) {
   return (
