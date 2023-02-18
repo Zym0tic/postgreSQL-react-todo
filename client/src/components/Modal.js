@@ -15,6 +15,12 @@ function Modal() {
 
 const handleChange = (e) => {
   console.log('changing!', e)
+  const { name, value } = e.target
+
+  setData(data => ({
+    ...data,
+    [name] : value
+  }))
 }
 
   return (
@@ -31,7 +37,7 @@ const handleChange = (e) => {
           maxLength={30}
           placeholder='Your task goes here'
           name='title' 
-          value={""}
+          value={data.title}
           onChange={handleChange}
           />
           <br/>
@@ -43,7 +49,7 @@ const handleChange = (e) => {
           min='0'
           max='100'
           name='progress'
-          value={""}
+          value={data.progress}
           onChange={handleChange}
           />
           <input className={mode} type='submit'/>
