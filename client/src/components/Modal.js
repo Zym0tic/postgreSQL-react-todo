@@ -23,7 +23,6 @@ function Modal({mode, setShowModal, getData, task}) {
         body: JSON.stringify(data)
       })
       if (response.status === 200) {
-        console.log('WORKED!')
         setShowModal(false)
         getData()
       }
