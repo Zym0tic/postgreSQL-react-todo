@@ -25,8 +25,8 @@ useEffect(() => getData, [])
 
     return (
         <div className='app'>
-            <ListHeader listName={'Holiday tick List'} />
-            {sortedTasks?.map((task) => <ListItem key={task.id} task={task}/>)}
+            <ListHeader listName={'Holiday tick List'} getData={getData}/>
+            {sortedTasks?.map((task) => <ListItem key={task.id} task={task} getData={getData}/>)}
         </div>
     )
 }
