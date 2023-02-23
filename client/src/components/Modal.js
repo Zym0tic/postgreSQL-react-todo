@@ -1,5 +1,6 @@
 import { useState } from "react"
 
+
 function Modal({mode, setShowModal, getData, task}) {
   const editMode = mode ==="edit" ? true : false
 
