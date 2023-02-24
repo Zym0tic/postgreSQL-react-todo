@@ -6,7 +6,7 @@ function Auth() {
 
   const viewLogin = (status) => {
     setError(null);
-    setIsLogin(true);
+    setIsLogin(status);
   };
 
   return (
