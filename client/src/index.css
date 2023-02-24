@@ -166,3 +166,22 @@ input {
 .modal label {
   font-size: 13px;
 }
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+
+  .app{
+    margin-top: 0;
+    width: 100vw;
+  }
+
+  .list-header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-buttons {
+    margin-bottom: 15px;
+  }
+}
