@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.get("/todos/:userEmail", async (req, res) => {
   const { userEmail } = req.params;
-  console.log(userEmail);
+  // console.log(userEmail);
 
   try {
     const todos = await pool.query(

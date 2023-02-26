@@ -7,7 +7,7 @@ import { useCookies } from "react-cookie";
 const App = () => {
   const [cookies, setCookie, removeCookie] = useCookies(null)
   const AuthToken = cookies.AuthToken
-  const userEmail = cookies.email;
+  const userEmail = cookies.Email;
   const [tasks, setTasks] = useState(null);
 
 
@@ -30,7 +30,7 @@ const App = () => {
     }
   });
 
-  console.log(tasks);
+
 
   // sort by date
   const sortedTasks = tasks?.sort(
