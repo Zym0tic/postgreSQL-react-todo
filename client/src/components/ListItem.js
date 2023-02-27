@@ -1,6 +1,6 @@
 import React from "react";
 import TickIcon from "./TickIcon";
-// import ProgressBar from './ProgressBar'
+import ProgressBar from './ProgressBar'
 import { useState } from "react";
 import Modal from "./Modal";
 
@@ -26,8 +26,8 @@ function ListItem({ task, getData }) {
     <li className="list-item">
       <div className="info-container">
         <TickIcon />
-        <p>{task.title}</p>
-        {/* <ProgressBar /> */}
+        <p className="task-title">{task.title}</p>
+        <ProgressBar progress={task.progress}/>
       </div>
       <div className="button-container">
         <button className="edit" onClick={() => setShowModal(true)}>
