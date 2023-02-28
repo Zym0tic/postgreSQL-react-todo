@@ -2,10 +2,10 @@ const Pool = require('pg').Pool
 require('dotenv').config()
 
 const pool = new Pool({
-    user: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    host: process.env.HOST,
-    port: process.env.DBPORT,
+    user: 'ZIj8qGgfPUd7w4VK',
+    password: 'dQcojTwDFCwaHEMW',
+    host: 'todoapp-amhtl-postgresql.todoapp-amhtl.svc.cluster.local',
+    port: '5432',
     database: 'todoapp'
 })
 
